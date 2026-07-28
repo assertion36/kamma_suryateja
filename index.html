@@ -599,158 +599,205 @@
     <div class="section-tag">// Latest Writings</div>
     <h2 class="section-title">Blog Posts</h2>
   </div>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">Detailed Routing</span>
-  </div>
-  <h3 class="blog-title">Google Maps vs Real Driving — Understanding Detailed Routing</h3>
-  <p class="blog-excerpt">A map shows the best route, but driving still requires following exact lanes, turns, and traffic rules. Global Routing decides the path — Detailed Routing creates the actual metal wires, vias, and legal connections while obeying every DRC rule. Planning the route is only half the job; executing it accurately is what makes the chip manufacturable.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-detailedrouting-activity-7487718503035297794-Fq49" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">Global Routing</span>
-  </div>
-  <h3 class="blog-title">Every Journey Starts With a Map — Understanding Global Routing</h3>
-  <p class="blog-excerpt">Global Routing doesn't create the final wires — it creates the best routing plan. By estimating routing resources, identifying congestion hotspots, and planning optimal paths, it ensures detailed routing has the highest chance of success. A few minutes understanding Global Routing today can save hours of debugging congestion and DRC issues tomorrow.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-globalrouting-activity-7487356101391454208-HWpU" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">Routing</span>
-  </div>
-  <h3 class="blog-title">The Road Trip That Taught Me About Routing</h3>
-  <p class="blog-excerpt">A road trip needs proper roads connecting every destination before the journey can begin — choosing the best roads, avoiding traffic, using flyovers where needed. After Placement decides where each cell lives, Routing creates the metal connections that let signals, clocks, and power travel across the chip. Placement decides the destination — Routing creates the journey.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-routing-activity-7486268934862843904-vHn_" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">End-Cap Cells</span>
-  </div>
-  <h3 class="blog-title">The Boundary Wall Story — Understanding End-Cap Cells</h3>
-  <p class="blog-excerpt">A boundary wall at the end of a street protects the neighborhood and ensures the next street connects perfectly — not for living, but for protection. End-Cap Cells do the same in VLSI. No logic operations, but they protect standard-cell row edges, maintain well continuity, prevent DRC violations, and ensure clean block abutment for reliable manufacturing.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7485906591800778752-jFDo" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">Filler Cells</span>
-  </div>
-  <h3 class="blog-title">The Empty Plot That Caused Problems — Understanding Filler Cells</h3>
-  <p class="blog-excerpt">An empty plot between two houses disrupted underground utility pressure until a small structure filled the gap. Filler Cells do the same in an IC — no logic function, but they maintain VDD/VSS and N-well continuity, reduce well proximity effects, avoid extra DRC issues, and provide space for decoupling capacitors. The smallest cells often make the biggest contribution to silicon reliability.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7483369843619160065-fYgA" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">Tie Cells</span>
-  </div>
-  <h3 class="blog-title">The Small Switch That Protected the Entire House — Understanding Tie Cells</h3>
-  <p class="blog-excerpt">An unused electrical wire left floating can cause problems from noise or voltage fluctuations — so electricians always connect it to a stable reference. Tie Cells do the same in Physical Design. Unused inputs are never left floating; Tie High and Tie Low cells provide a stable logic '1' or '0', protecting gate oxide and improving chip reliability.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-tiecells-share-7483011967167651840-soOS/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">Tap Cells</span>
-  </div>
-  <h3 class="blog-title">The Silent Protector — Understanding Tap Cells and Latch-Up</h3>
-  <p class="blog-excerpt">A fire station never produces anything, yet it prevents a small spark from becoming a disaster. Tap Cells work the same way — they perform no logic, but quietly tie the substrate and well to the proper supply, preventing latch-up between VDD and VSS. Great designs aren't just about performance, they're also about protection.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-tapcells-share-7482411105139544065-tHA8/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">Floorplanning</span>
-  </div>
-  <h3 class="blog-title">Why Some Cities Never Feel Crowded — Reducing Congestion Through Floorplanning</h3>
-  <p class="blog-excerpt">City planners carefully manage aspect ratio, road spacing, power zones, and density before traffic ever becomes a problem — and optimize rather than rebuild when it does. A well-planned floorplan with the right aspect ratio, channel spacing, voltage areas, and balanced cell density significantly reduces congestion. A successful chip, like a successful city, is built through thoughtful planning from the start.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-floorplanning-share-7482285845480407040-pP5b/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">CTS</span>
-  </div>
-  <h3 class="blog-title">One Water Tank Wasn't Enough — Multi-Source Clock Tree Synthesis</h3>
-  <p class="blog-excerpt">A growing city built multiple water tanks across neighborhoods so every home received water from the nearest source — synchronized by a common balancing point. Multi-Source CTS works the same way. Instead of one clock source, multiple sources reduce latency and skew across large chips, with the Zero Force Target acting as the common balancing point.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-cts-activity-7481195501028073473-0LWt" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">Timing Closure</span>
-  </div>
-  <h3 class="blog-title">A Small Change, A Big Difference — Useful Skew, Shielding & NDR</h3>
-  <p class="blog-excerpt">Adjusted signal timing fixed traffic without widening the road. Sound barriers protected a hospital from highway noise. Stronger materials handled a high-traffic bridge. Three problems, three different solutions — just like Useful Skew adjusts clock timing, Shielding protects sensitive signals from crosstalk, and NDR applies wider wires for critical nets. Great engineering knows which solution fits which problem.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7480833140698050560-8oBA" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">CTS</span>
-  </div>
-  <h3 class="blog-title">City Road Networks & Clock Routing Structures — H-Tree, Mesh, Fish Bone & More</h3>
-  <p class="blog-excerpt">A single main road, a grid, a symmetric township, diagonal shortcuts — every city road design has tradeoffs. Clock routing structures like H-Tree, X-Tree, Fish Bone, Mesh, and I-Tree face the same challenge. Every flip-flop must receive the clock at the right time with minimum skew, controlled slew, acceptable latency, and positive slack.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-clocktreesynthesis-activity-7480470726844555265-3NJD" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">CTS</span>
-  </div>
-  <h3 class="blog-title">One Control Room vs Two Teams — Classic CTS vs Concurrent Clock & Data Optimization</h3>
-  <p class="blog-excerpt">A smart city's traffic team learned that optimizing signals and roads independently created new problems after each stage. Forming one integrated team that optimized both together solved everything faster. In Physical Design, Classic CTS builds the clock tree first then fixes data paths — while CCD optimizes clock skew, setup, and hold timing all at once for better overall QoR.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-cts-activity-7480108354539823104-omx2" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">Low Power</span>
-  </div>
-  <h3 class="blog-title">The Architect and the Construction Team — UPF vs Power Network Synthesis</h3>
-  <p class="blog-excerpt">A hospital blueprint defined which rooms needed backup power and isolation — but couldn't tell electricians where to run the cables. That's exactly how UPF and PNS work together. UPF defines the low-power intent (domains, switches, isolation, retention). PNS builds the actual power grid (rings, straps, vias, mesh). One defines the destination — the other builds the road.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-upf-share-7479751979515170816--EAb/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
+	    <article class="blog-card">
+      <div class="blog-meta">
+        <span class="blog-date">JUN 2025</span>
+        <span class="blog-tag">Physical Design</span>
+      </div>
+      <h3 class="blog-title">Physical Design: Bridging Architecture to Reality</h3>
+      <p class="blog-excerpt">Every chip starts as an idea. Physical Design converts a synthesized netlist into a manufacturable layout meeting timing, power, area, and signal integrity — directly powering AI, 5G, HPC, and automotive chips.</p>
+      <a href="https://www.linkedin.com/posts/kamma-suryateja_physicaldesign-vlsi-semiconductor-activity-7468167919634563072-yZkQ" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+    </article>
+    <article class="blog-card">
+      <div class="blog-meta">
+        <span class="blog-date">JUN 2025</span>
+        <span class="blog-tag">Career Roadmap</span>
+      </div>
+      <h3 class="blog-title">Roadmap to Become a Physical Design Engineer</h3>
+      <p class="blog-excerpt">From CMOS fundamentals to Signoff & Tapeout — a step-by-step learning path covering Synthesis, Timing Constraints, Floorplanning, PnR, and final GDSII generation for aspiring PD engineers.</p>
+      <a href="https://www.linkedin.com/posts/kamma-suryateja_physicaldesign-vlsi-asic-activity-7468511952580034560-uHvM" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+    </article>
+    <article class="blog-card">
+      <div class="blog-meta">
+        <span class="blog-date">JUN 2025</span>
+        <span class="blog-tag">CMOS Fundamentals</span>
+      </div>
+      <h3 class="blog-title">CMOS Fundamentals Every Physical Design Engineer Should Master</h3>
+      <p class="blog-excerpt">Physical Design is not just about running commands — it's about understanding the device physics that drives timing, power, and performance. Continuous learning is the key to becoming a better PD engineer.</p>
+      <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-cmos-physicaldesign-activity-7468874321575362561-k3FF" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+    </article>
+    <article class="blog-card">
+      <div class="blog-meta">
+        <span class="blog-date">JUN 2025</span>
+        <span class="blog-tag">ASIC Flow</span>
+      </div>
+      <h3 class="blog-title">Understanding the Netlist — Foundation of Physical Design</h3>
+      <p class="blog-excerpt">The netlist is the bridge between front-end and back-end. RTL tells us what the design should do; the netlist tells us how it's built. Every optimization — timing, power, area — starts from this file.</p>
+      <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7469603445004697600-0YHS" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+    </article>
+    <article class="blog-card">
+      <div class="blog-meta">
+        <span class="blog-date">JUN 2025</span>
+        <span class="blog-tag">CMOS</span>
+      </div>
+      <h3 class="blog-title">Why Does a PMOS Turn ON When Gate Voltage Goes Low?</h3>
+      <p class="blog-excerpt">When the gate voltage drops below the source, an inversion channel of holes forms beneath the gate oxide — turning the PMOS ON. It's not magic, it's physics working beautifully at the nanoscale.</p>
+      <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-cmos-pmos-activity-7470323873012596738-0YGA" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+    </article>
+    <article class="blog-card">
+      <div class="blog-meta">
+        <span class="blog-date">JUN 2025</span>
+        <span class="blog-tag">Physical Design</span>
+      </div>
+      <h3 class="blog-title">The Hidden Backbone of Every Successful Chip</h3>
+      <p class="blog-excerpt">Physical Design is a chain where every stage depends on the quality of outputs from the previous one — Netlist → Floorplan → Placement → CTS → Routing → Signoff. A problem ignored early becomes a challenge later.</p>
+      <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-asic-physicaldesign-activity-7469969526219186176-MyYD" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+    </article>
 <article class="blog-card">
   <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">CTS</span>
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">STA</span>
   </div>
-  <h3 class="blog-title">The Traffic Signal That Taught Me Clock Tree Synthesis</h3>
-  <p class="blog-excerpt">When every traffic signal operated independently, the city had jams and accidents. A Central Traffic Control System synchronized them all — just like CTS does for millions of flip-flops on a chip. CTS isn't just about distributing a clock. It's about creating perfect synchronization by balancing skew, insertion delay, fanout, and transition across the entire chip.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-clocktreesynthesis-share-7478424614629494784-2CLQ/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+  <h3 class="blog-title">Which Timing Check is Most Affected by PLL Jitter?</h3>
+  <p class="blog-excerpt">A VLSI timing poll question that tests a fundamental STA concept — which check is most directly affected by excessive clock uncertainty introduced by PLL jitter? Setup, Recovery, or Pulse Width? Timing closure is not just about fixing violations, it's about understanding root causes.</p>
+  <a href="https://www.linkedin.com/in/kamma-suryateja" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	  <article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">Poll</span>
+  </div>
+  <h3 class="blog-title">Advanced SDC Challenge — Multi-Clock Domain Constraints</h3>
+  <p class="blog-excerpt">Which SDC command correctly handles paths between two asynchronous clocks — CLK_A at 500MHz and CLK_B at 333MHz? This poll tests your deep understanding of multi-clock domain constraints beyond the basics.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_hey-there-heres-an-advanced-sdc-challenge-ugcPost-7470696956412067840-KEVI/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+
+	  <article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">SDC</span>
+  </div>
+  <h3 class="blog-title">Understanding the Synopsys Design Constraints (SDC) File</h3>
+  <p class="blog-excerpt">The SDC file silently drives every stage of Physical Design — from synthesis to signoff. It defines clock definitions, I/O delays, false paths, multicycle paths, and more, ensuring all EDA tools work toward the same implementation goal.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-asic-physicaldesign-share-7470698313747451904-kpdA/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	  <article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">Poll</span>
+  </div>
+  <h3 class="blog-title">Which is the Universal Gate — NAND or NOR?</h3>
+  <p class="blog-excerpt">Both NAND and NOR are called universal gates because any logic function can be implemented using only one of them. But which one do you prefer to work with? Cast your vote and let's discuss!</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_activity-7470328603063468032-85NK" target="_blank" class="blog-read-more">Vote on LinkedIn ↗</a>
+</article>
+  <div class="blog-grid">
+	  <article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">Discussion</span>
+  </div>
+  <h3 class="blog-title">Let's Discuss All About Physical Design!</h3>
+  <p class="blog-excerpt">An open discussion on Physical Design — share your thoughts, questions, and experiences. Whether you're a beginner or an experienced engineer, let's learn and grow together in the VLSI community.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_lets-discuss-all-about-physical-design-activity-7469990527925436416-fWJ4" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">LEF Files</span>
+  </div>
+  <h3 class="blog-title">Technology LEF vs Standard Cell LEF — The Foundation of Physical Design</h3>
+  <p class="blog-excerpt">Two files every backend engineer uses daily — Technology LEF defines what can be built (metal layers, routing rules, vias), while Standard Cell LEF defines what building blocks are available (cell dimensions, pin locations, obstructions). Without them, physical implementation simply cannot happen.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7471058109965328384-fKhH" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+		<article class="blog-card">
+		<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">Low Power</span>
+  </div>
+  <h3 class="blog-title">UPF — The Blueprint of Low-Power Intent in Physical Design</h3>
+  <p class="blog-excerpt">UPF is not just a file — it's the contract that keeps the entire low-power implementation flow aligned. Power domains, supply nets, isolation cells, retention strategies, level shifters — all defined in one place so Design, Verification, PD, and Signoff teams speak the same language.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-upf-share-7472146102834712577-rK1N/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
 </article>
 	<article class="blog-card">
   <div class="blog-meta">
-    <span class="blog-date">JUL 2025</span>
-    <span class="blog-tag">Placement</span>
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">Sanity Checks</span>
   </div>
-  <h3 class="blog-title">The New Shopping Mall That Wasn't Ready to Open — Post-Placement Checks & Black Boxes</h3>
-  <p class="blog-excerpt">A mall looked perfect but failed inspection — blocked exits, incomplete wiring, and an unbuilt shop represented only by a blueprint. After Placement in Physical Design, the same rule applies. DRC, congestion, density, timing, and overlap checks must all pass before CTS begins. And just like that unbuilt shop, Black Boxes must be resolved before tapeout — because "looks complete" never means "is complete."</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_the-new-shopping-mall-that-wasnt-ready-share-7478062647540826115-Ifdg/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+  <h3 class="blog-title">The 5-Minute Check That Saved Me 5 Days</h3>
+  <p class="blog-excerpt">A missing generated clock constraint in the SDC left several critical timing paths completely unanalyzed — and nobody caught it until a quick sanity check flagged it. Physical Design failures rarely start at signoff. They start much earlier as small warnings that nobody investigated.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7472512757376917505-V6i5" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">Floorplanning</span>
+  </div>
+  <h3 class="blog-title">Building a City Before Constructing the Buildings</h3>
+  <p class="blog-excerpt">Floorplanning in VLSI is like urban planning for a smart city — before placing millions of standard cells, we decide die size, macro placement, power planning, and routing resources. A poor floorplan almost guarantees problems in later stages.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-floorplanning-share-7472862845651603456-n0mQ/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">Floorplanning</span>
+  </div>
+  <h3 class="blog-title">Core Limited vs Pad Limited Floorplan — Clear Explanation</h3>
+  <p class="blog-excerpt">Confused about the difference between core limited and pad limited floorplans? A core limited design is constrained by the logic area inside, while a pad limited design is constrained by the number of I/O pads around the boundary. This article clears it all up!</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_confused-about-the-terminologies-and-difference-share-7472902296461496320-IazL/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">Macros</span>
+  </div>
+  <h3 class="blog-title">A Road Trip That Explained Macros Better Than Any Textbook</h3>
+  <p class="blog-excerpt">Hard, Firm, and Soft Macros explained through a road trip analogy — a fully assembled car (Hard Macro: SRAM, PLL), a customizable vehicle (Firm Macro), and a blueprint (Soft Macro: CPU Core, DSP). Success isn't about designing everything from scratch, it's about knowing what to reuse.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-macros-share-7473593546172964864-imQj/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">Power Planning</span>
+  </div>
+  <h3 class="blog-title">A Daily Life Story That Taught Me the Importance of Power Planning</h3>
+  <p class="blog-excerpt">A flickering light and a tripped circuit breaker in a friend's new house revealed the cost of poor electrical planning — and it perfectly mirrors what happens in VLSI when Power Planning is ignored. IR drop, EM violations, routing congestion, and weeks of ECO rework all trace back to one root cause: not planning the PDN early enough.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-powerplanning-share-7474679936360816640-6rPE/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">Power Planning</span>
+  </div>
+  <h3 class="blog-title">The Apartment That Failed Inspection — A Power Planning Lesson</h3>
+  <p class="blog-excerpt">A newly built apartment failed inspection due to electrical clearance and spacing violations — just like a chip fails DRC after power planning. Power rings, stripes, via arrays, and macro connections all follow strict technology rules. The best engineers don't fix DRCs at the end — they prevent them from appearing in the first place.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-powerplanning-share-7475038451235737600-Nsok/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">IR Drop</span>
+  </div>
+  <h3 class="blog-title">The Apartment Water Tank Problem — Understanding IR Drop</h3>
+  <p class="blog-excerpt">Residents on the 12th floor got weak water pressure despite a full tank — because the delivery network was the problem, not the source. In chip design, IR Drop works exactly the same way: voltage drops across power rings, stripes, and vias before reaching the cells. A strong source is useless without a strong distribution network.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-irdrop-share-7475401720450138113-YTOM/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUN 2025</span>
+    <span class="blog-tag">Floorplanning</span>
+  </div>
+  <h3 class="blog-title">The Morning Before an Important Interview — A Floorplan Lesson</h3>
+  <p class="blog-excerpt">Five minutes of verification before leaving for an interview — checking the laptop, resume, wallet, and route — saved the day. In Physical Design, the same principle applies after Floorplan and Power Planning. A good floorplan isn't the one that looks clean. It's the one that passes every sanity check before placement begins.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-floorplanning-share-7475769175420993536-nvGj/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
 </article>
 	<article class="blog-card">
   <div class="blog-meta">
     <span class="blog-date">JUN 2025</span>
     <span class="blog-tag">Placement</span>
   </div>
-  <h3 class="blog-title">The Empty Seat That Saved the Event — A Lesson in Placement Blockages</h3>
-  <p class="blog-excerpt">Wedding organizers left areas vacant on purpose — for the bridal walk, photographers, waiters, and emergency exits. In chip design, Placement Blockages work the same way. Hard, Soft, Partial, and Routing Blockages each serve a purpose. Good planning isn't about filling every space — it's about knowing which spaces should remain empty.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-placement-share-7477938167099273216-Mwbt/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Placement</span>
-  </div>
-  <h3 class="blog-title">What Traffic Taught Me About Placement in Physical Design</h3>
-  <p class="blog-excerpt">Three routes to office mirrored three placement strategies — the shortest path (Timing-Driven), the planned city roads (Floorplan-Driven), and the avoided congested shortcut (Congestion-Driven). A great placement isn't only one of these — it's the right balance of all three, building designs that are faster, cleaner, and easier to close.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-placement-share-7477575465973596161-f3wk/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+  <h3 class="blog-title">Every Seat Matters — Just Like Every Cell in ASIC Placement</h3>
+  <p class="blog-excerpt">A 1000-guest wedding hall filled in minutes without chaos — because every seat was carefully planned. ASIC Placement works the same way. Millions of standard cells must be placed to minimize wirelength, reduce congestion, improve timing, and prepare the design for CTS and routing. Great chips, like great events, don't happen by chance.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_asic-physicaldesign-vlsi-share-7475888482939465728-mHlj/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
 </article>
 	<article class="blog-card">
   <div class="blog-meta">
@@ -766,206 +813,154 @@
     <span class="blog-date">JUN 2025</span>
     <span class="blog-tag">Placement</span>
   </div>
-  <h3 class="blog-title">Every Seat Matters — Just Like Every Cell in ASIC Placement</h3>
-  <p class="blog-excerpt">A 1000-guest wedding hall filled in minutes without chaos — because every seat was carefully planned. ASIC Placement works the same way. Millions of standard cells must be placed to minimize wirelength, reduce congestion, improve timing, and prepare the design for CTS and routing. Great chips, like great events, don't happen by chance.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_asic-physicaldesign-vlsi-share-7475888482939465728-mHlj/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+  <h3 class="blog-title">What Traffic Taught Me About Placement in Physical Design</h3>
+  <p class="blog-excerpt">Three routes to office mirrored three placement strategies — the shortest path (Timing-Driven), the planned city roads (Floorplan-Driven), and the avoided congested shortcut (Congestion-Driven). A great placement isn't only one of these — it's the right balance of all three, building designs that are faster, cleaner, and easier to close.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-placement-share-7477575465973596161-f3wk/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
 </article>
 	<article class="blog-card">
   <div class="blog-meta">
     <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Floorplanning</span>
+    <span class="blog-tag">Placement</span>
   </div>
-  <h3 class="blog-title">The Morning Before an Important Interview — A Floorplan Lesson</h3>
-  <p class="blog-excerpt">Five minutes of verification before leaving for an interview — checking the laptop, resume, wallet, and route — saved the day. In Physical Design, the same principle applies after Floorplan and Power Planning. A good floorplan isn't the one that looks clean. It's the one that passes every sanity check before placement begins.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-floorplanning-share-7475769175420993536-nvGj/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+  <h3 class="blog-title">The Empty Seat That Saved the Event — A Lesson in Placement Blockages</h3>
+  <p class="blog-excerpt">Wedding organizers left areas vacant on purpose — for the bridal walk, photographers, waiters, and emergency exits. In chip design, Placement Blockages work the same way. Hard, Soft, Partial, and Routing Blockages each serve a purpose. Good planning isn't about filling every space — it's about knowing which spaces should remain empty.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-placement-share-7477938167099273216-Mwbt/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
 </article>
 	<article class="blog-card">
   <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">IR Drop</span>
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">Placement</span>
   </div>
-  <h3 class="blog-title">The Apartment Water Tank Problem — Understanding IR Drop</h3>
-  <p class="blog-excerpt">Residents on the 12th floor got weak water pressure despite a full tank — because the delivery network was the problem, not the source. In chip design, IR Drop works exactly the same way: voltage drops across power rings, stripes, and vias before reaching the cells. A strong source is useless without a strong distribution network.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-irdrop-share-7475401720450138113-YTOM/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Power Planning</span>
-  </div>
-  <h3 class="blog-title">The Apartment That Failed Inspection — A Power Planning Lesson</h3>
-  <p class="blog-excerpt">A newly built apartment failed inspection due to electrical clearance and spacing violations — just like a chip fails DRC after power planning. Power rings, stripes, via arrays, and macro connections all follow strict technology rules. The best engineers don't fix DRCs at the end — they prevent them from appearing in the first place.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-powerplanning-share-7475038451235737600-Nsok/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Power Planning</span>
-  </div>
-  <h3 class="blog-title">A Daily Life Story That Taught Me the Importance of Power Planning</h3>
-  <p class="blog-excerpt">A flickering light and a tripped circuit breaker in a friend's new house revealed the cost of poor electrical planning — and it perfectly mirrors what happens in VLSI when Power Planning is ignored. IR drop, EM violations, routing congestion, and weeks of ECO rework all trace back to one root cause: not planning the PDN early enough.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-powerplanning-share-7474679936360816640-6rPE/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Macros</span>
-  </div>
-  <h3 class="blog-title">A Road Trip That Explained Macros Better Than Any Textbook</h3>
-  <p class="blog-excerpt">Hard, Firm, and Soft Macros explained through a road trip analogy — a fully assembled car (Hard Macro: SRAM, PLL), a customizable vehicle (Firm Macro), and a blueprint (Soft Macro: CPU Core, DSP). Success isn't about designing everything from scratch, it's about knowing what to reuse.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-macros-share-7473593546172964864-imQj/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Floorplanning</span>
-  </div>
-  <h3 class="blog-title">Core Limited vs Pad Limited Floorplan — Clear Explanation</h3>
-  <p class="blog-excerpt">Confused about the difference between core limited and pad limited floorplans? A core limited design is constrained by the logic area inside, while a pad limited design is constrained by the number of I/O pads around the boundary. This article clears it all up!</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_confused-about-the-terminologies-and-difference-share-7472902296461496320-IazL/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Floorplanning</span>
-  </div>
-  <h3 class="blog-title">Building a City Before Constructing the Buildings</h3>
-  <p class="blog-excerpt">Floorplanning in VLSI is like urban planning for a smart city — before placing millions of standard cells, we decide die size, macro placement, power planning, and routing resources. A poor floorplan almost guarantees problems in later stages.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-floorplanning-share-7472862845651603456-n0mQ/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Sanity Checks</span>
-  </div>
-  <h3 class="blog-title">The 5-Minute Check That Saved Me 5 Days</h3>
-  <p class="blog-excerpt">A missing generated clock constraint in the SDC left several critical timing paths completely unanalyzed — and nobody caught it until a quick sanity check flagged it. Physical Design failures rarely start at signoff. They start much earlier as small warnings that nobody investigated.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7472512757376917505-V6i5" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-		<article class="blog-card">
-		<article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Low Power</span>
-  </div>
-  <h3 class="blog-title">UPF — The Blueprint of Low-Power Intent in Physical Design</h3>
-  <p class="blog-excerpt">UPF is not just a file — it's the contract that keeps the entire low-power implementation flow aligned. Power domains, supply nets, isolation cells, retention strategies, level shifters — all defined in one place so Design, Verification, PD, and Signoff teams speak the same language.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-upf-share-7472146102834712577-rK1N/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">LEF Files</span>
-  </div>
-  <h3 class="blog-title">Technology LEF vs Standard Cell LEF — The Foundation of Physical Design</h3>
-  <p class="blog-excerpt">Two files every backend engineer uses daily — Technology LEF defines what can be built (metal layers, routing rules, vias), while Standard Cell LEF defines what building blocks are available (cell dimensions, pin locations, obstructions). Without them, physical implementation simply cannot happen.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7471058109965328384-fKhH" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-  <div class="blog-grid">
-	  <article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Discussion</span>
-  </div>
-  <h3 class="blog-title">Let's Discuss All About Physical Design!</h3>
-  <p class="blog-excerpt">An open discussion on Physical Design — share your thoughts, questions, and experiences. Whether you're a beginner or an experienced engineer, let's learn and grow together in the VLSI community.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_lets-discuss-all-about-physical-design-activity-7469990527925436416-fWJ4" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	  <article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Poll</span>
-  </div>
-  <h3 class="blog-title">Which is the Universal Gate — NAND or NOR?</h3>
-  <p class="blog-excerpt">Both NAND and NOR are called universal gates because any logic function can be implemented using only one of them. But which one do you prefer to work with? Cast your vote and let's discuss!</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_activity-7470328603063468032-85NK" target="_blank" class="blog-read-more">Vote on LinkedIn ↗</a>
-</article>
-	  <article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">SDC</span>
-  </div>
-  <h3 class="blog-title">Understanding the Synopsys Design Constraints (SDC) File</h3>
-  <p class="blog-excerpt">The SDC file silently drives every stage of Physical Design — from synthesis to signoff. It defines clock definitions, I/O delays, false paths, multicycle paths, and more, ensuring all EDA tools work toward the same implementation goal.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-asic-physicaldesign-share-7470698313747451904-kpdA/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-</article>
-	  <article class="blog-card">
-  <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">Poll</span>
-  </div>
-  <h3 class="blog-title">Advanced SDC Challenge — Multi-Clock Domain Constraints</h3>
-  <p class="blog-excerpt">Which SDC command correctly handles paths between two asynchronous clocks — CLK_A at 500MHz and CLK_B at 333MHz? This poll tests your deep understanding of multi-clock domain constraints beyond the basics.</p>
-  <a href="https://www.linkedin.com/posts/kamma-suryateja_hey-there-heres-an-advanced-sdc-challenge-ugcPost-7470696956412067840-KEVI/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+  <h3 class="blog-title">The New Shopping Mall That Wasn't Ready to Open — Post-Placement Checks & Black Boxes</h3>
+  <p class="blog-excerpt">A mall looked perfect but failed inspection — blocked exits, incomplete wiring, and an unbuilt shop represented only by a blueprint. After Placement in Physical Design, the same rule applies. DRC, congestion, density, timing, and overlap checks must all pass before CTS begins. And just like that unbuilt shop, Black Boxes must be resolved before tapeout — because "looks complete" never means "is complete."</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_the-new-shopping-mall-that-wasnt-ready-share-7478062647540826115-Ifdg/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
 </article>
 <article class="blog-card">
   <div class="blog-meta">
-    <span class="blog-date">JUN 2025</span>
-    <span class="blog-tag">STA</span>
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">CTS</span>
   </div>
-  <h3 class="blog-title">Which Timing Check is Most Affected by PLL Jitter?</h3>
-  <p class="blog-excerpt">A VLSI timing poll question that tests a fundamental STA concept — which check is most directly affected by excessive clock uncertainty introduced by PLL jitter? Setup, Recovery, or Pulse Width? Timing closure is not just about fixing violations, it's about understanding root causes.</p>
-  <a href="https://www.linkedin.com/in/kamma-suryateja" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+  <h3 class="blog-title">The Traffic Signal That Taught Me Clock Tree Synthesis</h3>
+  <p class="blog-excerpt">When every traffic signal operated independently, the city had jams and accidents. A Central Traffic Control System synchronized them all — just like CTS does for millions of flip-flops on a chip. CTS isn't just about distributing a clock. It's about creating perfect synchronization by balancing skew, insertion delay, fanout, and transition across the entire chip.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-clocktreesynthesis-share-7478424614629494784-2CLQ/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
 </article>
-    <article class="blog-card">
-      <div class="blog-meta">
-        <span class="blog-date">JUN 2025</span>
-        <span class="blog-tag">Physical Design</span>
-      </div>
-      <h3 class="blog-title">The Hidden Backbone of Every Successful Chip</h3>
-      <p class="blog-excerpt">Physical Design is a chain where every stage depends on the quality of outputs from the previous one — Netlist → Floorplan → Placement → CTS → Routing → Signoff. A problem ignored early becomes a challenge later.</p>
-      <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-asic-physicaldesign-activity-7469969526219186176-MyYD" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-    </article>
-
-    <article class="blog-card">
-      <div class="blog-meta">
-        <span class="blog-date">JUN 2025</span>
-        <span class="blog-tag">CMOS</span>
-      </div>
-      <h3 class="blog-title">Why Does a PMOS Turn ON When Gate Voltage Goes Low?</h3>
-      <p class="blog-excerpt">When the gate voltage drops below the source, an inversion channel of holes forms beneath the gate oxide — turning the PMOS ON. It's not magic, it's physics working beautifully at the nanoscale.</p>
-      <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-cmos-pmos-activity-7470323873012596738-0YGA" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-    </article>
-
-    <article class="blog-card">
-      <div class="blog-meta">
-        <span class="blog-date">JUN 2025</span>
-        <span class="blog-tag">ASIC Flow</span>
-      </div>
-      <h3 class="blog-title">Understanding the Netlist — Foundation of Physical Design</h3>
-      <p class="blog-excerpt">The netlist is the bridge between front-end and back-end. RTL tells us what the design should do; the netlist tells us how it's built. Every optimization — timing, power, area — starts from this file.</p>
-      <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7469603445004697600-0YHS" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-    </article>
-
-    <article class="blog-card">
-      <div class="blog-meta">
-        <span class="blog-date">JUN 2025</span>
-        <span class="blog-tag">CMOS Fundamentals</span>
-      </div>
-      <h3 class="blog-title">CMOS Fundamentals Every Physical Design Engineer Should Master</h3>
-      <p class="blog-excerpt">Physical Design is not just about running commands — it's about understanding the device physics that drives timing, power, and performance. Continuous learning is the key to becoming a better PD engineer.</p>
-      <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-cmos-physicaldesign-activity-7468874321575362561-k3FF" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-    </article>
-
-    <article class="blog-card">
-      <div class="blog-meta">
-        <span class="blog-date">JUN 2025</span>
-        <span class="blog-tag">Career Roadmap</span>
-      </div>
-      <h3 class="blog-title">Roadmap to Become a Physical Design Engineer</h3>
-      <p class="blog-excerpt">From CMOS fundamentals to Signoff & Tapeout — a step-by-step learning path covering Synthesis, Timing Constraints, Floorplanning, PnR, and final GDSII generation for aspiring PD engineers.</p>
-      <a href="https://www.linkedin.com/posts/kamma-suryateja_physicaldesign-vlsi-asic-activity-7468511952580034560-uHvM" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-    </article>
-
-    <article class="blog-card">
-      <div class="blog-meta">
-        <span class="blog-date">JUN 2025</span>
-        <span class="blog-tag">Physical Design</span>
-      </div>
-      <h3 class="blog-title">Physical Design: Bridging Architecture to Reality</h3>
-      <p class="blog-excerpt">Every chip starts as an idea. Physical Design converts a synthesized netlist into a manufacturable layout meeting timing, power, area, and signal integrity — directly powering AI, 5G, HPC, and automotive chips.</p>
-      <a href="https://www.linkedin.com/posts/kamma-suryateja_physicaldesign-vlsi-semiconductor-activity-7468167919634563072-yZkQ" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
-    </article>
-
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">Low Power</span>
+  </div>
+  <h3 class="blog-title">The Architect and the Construction Team — UPF vs Power Network Synthesis</h3>
+  <p class="blog-excerpt">A hospital blueprint defined which rooms needed backup power and isolation — but couldn't tell electricians where to run the cables. That's exactly how UPF and PNS work together. UPF defines the low-power intent (domains, switches, isolation, retention). PNS builds the actual power grid (rings, straps, vias, mesh). One defines the destination — the other builds the road.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-upf-share-7479751979515170816--EAb/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">CTS</span>
+  </div>
+  <h3 class="blog-title">One Control Room vs Two Teams — Classic CTS vs Concurrent Clock & Data Optimization</h3>
+  <p class="blog-excerpt">A smart city's traffic team learned that optimizing signals and roads independently created new problems after each stage. Forming one integrated team that optimized both together solved everything faster. In Physical Design, Classic CTS builds the clock tree first then fixes data paths — while CCD optimizes clock skew, setup, and hold timing all at once for better overall QoR.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-cts-activity-7480108354539823104-omx2" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">CTS</span>
+  </div>
+  <h3 class="blog-title">City Road Networks & Clock Routing Structures — H-Tree, Mesh, Fish Bone & More</h3>
+  <p class="blog-excerpt">A single main road, a grid, a symmetric township, diagonal shortcuts — every city road design has tradeoffs. Clock routing structures like H-Tree, X-Tree, Fish Bone, Mesh, and I-Tree face the same challenge. Every flip-flop must receive the clock at the right time with minimum skew, controlled slew, acceptable latency, and positive slack.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-clocktreesynthesis-activity-7480470726844555265-3NJD" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">Timing Closure</span>
+  </div>
+  <h3 class="blog-title">A Small Change, A Big Difference — Useful Skew, Shielding & NDR</h3>
+  <p class="blog-excerpt">Adjusted signal timing fixed traffic without widening the road. Sound barriers protected a hospital from highway noise. Stronger materials handled a high-traffic bridge. Three problems, three different solutions — just like Useful Skew adjusts clock timing, Shielding protects sensitive signals from crosstalk, and NDR applies wider wires for critical nets. Great engineering knows which solution fits which problem.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7480833140698050560-8oBA" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">CTS</span>
+  </div>
+  <h3 class="blog-title">One Water Tank Wasn't Enough — Multi-Source Clock Tree Synthesis</h3>
+  <p class="blog-excerpt">A growing city built multiple water tanks across neighborhoods so every home received water from the nearest source — synchronized by a common balancing point. Multi-Source CTS works the same way. Instead of one clock source, multiple sources reduce latency and skew across large chips, with the Zero Force Target acting as the common balancing point.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-cts-activity-7481195501028073473-0LWt" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">Floorplanning</span>
+  </div>
+  <h3 class="blog-title">Why Some Cities Never Feel Crowded — Reducing Congestion Through Floorplanning</h3>
+  <p class="blog-excerpt">City planners carefully manage aspect ratio, road spacing, power zones, and density before traffic ever becomes a problem — and optimize rather than rebuild when it does. A well-planned floorplan with the right aspect ratio, channel spacing, voltage areas, and balanced cell density significantly reduces congestion. A successful chip, like a successful city, is built through thoughtful planning from the start.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-floorplanning-share-7482285845480407040-pP5b/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">Tap Cells</span>
+  </div>
+  <h3 class="blog-title">The Silent Protector — Understanding Tap Cells and Latch-Up</h3>
+  <p class="blog-excerpt">A fire station never produces anything, yet it prevents a small spark from becoming a disaster. Tap Cells work the same way — they perform no logic, but quietly tie the substrate and well to the proper supply, preventing latch-up between VDD and VSS. Great designs aren't just about performance, they're also about protection.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-tapcells-share-7482411105139544065-tHA8/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">Tie Cells</span>
+  </div>
+  <h3 class="blog-title">The Small Switch That Protected the Entire House — Understanding Tie Cells</h3>
+  <p class="blog-excerpt">An unused electrical wire left floating can cause problems from noise or voltage fluctuations — so electricians always connect it to a stable reference. Tie Cells do the same in Physical Design. Unused inputs are never left floating; Tie High and Tie Low cells provide a stable logic '1' or '0', protecting gate oxide and improving chip reliability.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-tiecells-share-7483011967167651840-soOS/" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">Filler Cells</span>
+  </div>
+  <h3 class="blog-title">The Empty Plot That Caused Problems — Understanding Filler Cells</h3>
+  <p class="blog-excerpt">An empty plot between two houses disrupted underground utility pressure until a small structure filled the gap. Filler Cells do the same in an IC — no logic function, but they maintain VDD/VSS and N-well continuity, reduce well proximity effects, avoid extra DRC issues, and provide space for decoupling capacitors. The smallest cells often make the biggest contribution to silicon reliability.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7483369843619160065-fYgA" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">End-Cap Cells</span>
+  </div>
+  <h3 class="blog-title">The Boundary Wall Story — Understanding End-Cap Cells</h3>
+  <p class="blog-excerpt">A boundary wall at the end of a street protects the neighborhood and ensures the next street connects perfectly — not for living, but for protection. End-Cap Cells do the same in VLSI. No logic operations, but they protect standard-cell row edges, maintain well continuity, prevent DRC violations, and ensure clean block abutment for reliable manufacturing.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-asic-activity-7485906591800778752-jFDo" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">Routing</span>
+  </div>
+  <h3 class="blog-title">The Road Trip That Taught Me About Routing</h3>
+  <p class="blog-excerpt">A road trip needs proper roads connecting every destination before the journey can begin — choosing the best roads, avoiding traffic, using flyovers where needed. After Placement decides where each cell lives, Routing creates the metal connections that let signals, clocks, and power travel across the chip. Placement decides the destination — Routing creates the journey.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-routing-activity-7486268934862843904-vHn_" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">Global Routing</span>
+  </div>
+  <h3 class="blog-title">Every Journey Starts With a Map — Understanding Global Routing</h3>
+  <p class="blog-excerpt">Global Routing doesn't create the final wires — it creates the best routing plan. By estimating routing resources, identifying congestion hotspots, and planning optimal paths, it ensures detailed routing has the highest chance of success. A few minutes understanding Global Routing today can save hours of debugging congestion and DRC issues tomorrow.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-globalrouting-activity-7487356101391454208-HWpU" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
+	<article class="blog-card">
+  <div class="blog-meta">
+    <span class="blog-date">JUL 2025</span>
+    <span class="blog-tag">Detailed Routing</span>
+  </div>
+  <h3 class="blog-title">Google Maps vs Real Driving — Understanding Detailed Routing</h3>
+  <p class="blog-excerpt">A map shows the best route, but driving still requires following exact lanes, turns, and traffic rules. Global Routing decides the path — Detailed Routing creates the actual metal wires, vias, and legal connections while obeying every DRC rule. Planning the route is only half the job; executing it accurately is what makes the chip manufacturable.</p>
+  <a href="https://www.linkedin.com/posts/kamma-suryateja_vlsi-physicaldesign-detailedrouting-activity-7487718503035297794-Fq49" target="_blank" class="blog-read-more">Read on LinkedIn ↗</a>
+</article>
   </div>
 </div>
 </section>
