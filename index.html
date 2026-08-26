@@ -19,6 +19,24 @@
     --grid-line: rgba(0,212,255,0.06);
     --glow-cyan: rgba(0,212,255,0.15);
   }
+	/* ── SCROLL PROGRESS BAR ── */
+#scrollProgress {
+  position: fixed; top: 0; left: 0;
+  height: 3px; width: 0%;
+  background: linear-gradient(to right, var(--accent-cyan), var(--accent-green), var(--accent-orange));
+  z-index: 10000;
+  transition: width 0.1s ease-out;
+}
+
+/* ── BIDIRECTIONAL SCROLL REVEAL ── */
+.reveal-scroll {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+  will-change: opacity, transform;
+}
+.reveal-scroll.reveal-from-top { transform: translateY(-34px); }
+.reveal-scroll.reveal-in { opacity: 1; transform: translateY(0); }
 	/* ── MAGNIFY CURSOR ── */
 @media (hover: hover) and (pointer: fine) {
   * { cursor: none !important; }
@@ -555,6 +573,7 @@
 <body>
 <div id="cursorDot"></div>
 <div id="cursorRing"></div>
+<div id="scrollProgress"></div>
 <!-- NAV -->
 <nav>
   <div class="container">
@@ -1549,6 +1568,54 @@
     el.addEventListener('mouseenter', () => ring.classList.add('magnify'));
     el.addEventListener('mouseleave', () => ring.classList.remove('magnify'));
   });
+})();
+</script>
+<script>
+(function(){
+  let lastScrollY = window.scrollY;
+  let scrollDir = 'down';
+  let ticking = false;
+  const bar = document.getElementById('scrollProgress');
+
+  window.addEventListener('scroll', () => {
+    const currentY = window.scrollY;
+    scrollDir = currentY > lastScrollY ? 'down' : 'up';
+    lastScrollY = currentY;
+
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (currentY / docHeight) * 100 : 0;
+        if (bar) bar.style.width = progress + '%';
+
+        // subtle parallax drift on the circuit grid background
+        document.body.style.backgroundPosition =
+          `0 ${currentY * 0.12}px, ${currentY * 0.08}px 0`;
+
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  const targets = document.querySelectorAll(
+    '.skill-card, .project-card, .blog-card, .edu-card, .timeline-item, .section-title, .stat-item, .contact-link'
+  );
+  targets.forEach(el => el.classList.add('reveal-scroll'));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const el = entry.target;
+      if (entry.isIntersecting) {
+        el.classList.add('reveal-in');
+      } else {
+        el.classList.remove('reveal-in');
+        el.classList.toggle('reveal-from-top', scrollDir === 'up');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  targets.forEach(el => observer.observe(el));
 })();
 </script>
 </body>
